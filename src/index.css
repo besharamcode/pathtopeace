@@ -1,0 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Inclusive+Sans:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
