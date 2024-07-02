@@ -1,5 +1,5 @@
 import Subheading from "../components/UI/Subheading";
-import c1 from "../assets/c-1.jpg";
+import c1 from "../assets/ci3.jpg";
 import CourseHeading from "../components/UI/CourseHeading";
 import { NavLink } from "react-router-dom";
 
@@ -8,7 +8,7 @@ const Course = () => {
     <section className="mb-8">
       <Subheading subheading={"Course"} />
       <div className="flex items-center gap-x-8 gap-y-4 mt-8">
-        <div className="max-w-[30%] p-4 bg-box rounded-lg relative overflow-hidden">
+        <div className="max-w-[25%] p-4 bg-box rounded-lg relative overflow-hidden">
           <div className="absolute top-0 right-0 bg-sec text-white px-3 py-1 rounded-bl-md shadow-md z-50">
             <p>Rs. 499</p>
           </div>

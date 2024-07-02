@@ -8,7 +8,6 @@ const Header = () => {
 
   useEffect(() => {
     setActiveLink(location.pathname);
-    console.log(location.pathname);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
 
