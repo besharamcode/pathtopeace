@@ -2,9 +2,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/Home";
 import Course from "./pages/Course";
-import PathToPeaceCourse from "./pages/PathToPeaceCourse";
 import Contact from "./pages/Contact";
 import HeaderRoutes from "./components/HeaderRoutes";
+import Tajweed from "./pages/Tajweed";
+import Translation from "./pages/Translation";
+import IslamSection from "./pages/IslamSection";
 
 function App() {
   return (
@@ -27,10 +29,26 @@ function App() {
           }
         />
         <Route
-          path="/course/pathtopeace"
+          path="/tajweed"
           element={
             <HeaderRoutes>
-              <PathToPeaceCourse />
+              <Tajweed />
+            </HeaderRoutes>
+          }
+        />
+        <Route
+          path="/translation"
+          element={
+            <HeaderRoutes>
+              <Translation />
+            </HeaderRoutes>
+          }
+        />
+        <Route
+          path="/i.s.l.a.m."
+          element={
+            <HeaderRoutes>
+              <IslamSection />
             </HeaderRoutes>
           }
         />

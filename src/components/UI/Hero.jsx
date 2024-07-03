@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 const Hero = () => {
   return (
     <section className="flex justify-between items-center mt-20">
@@ -14,8 +17,11 @@ const Hero = () => {
           Islam and words of Allah . Insha&apos;Allah (God Willing).
         </p>
         <div>
-          <button className="bg-sec px-4 font-rethink py-2 rounded-md mt-4">
-            Join Course Now!
+          <button className="bg-sec flex hover:scale-105 transition-transform items-center gap-2 px-4 font-rethink py-2 rounded-md mt-4">
+            Join Course Now
+            <div className="p-1 size-6 text-sec grid place-items-center rounded-full bg-white">
+              <FontAwesomeIcon icon={faArrowRight} />
+            </div>
           </button>
         </div>
       </div>

@@ -3,3 +3,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.learning-box:hover img {
+  filter: none;
+}
+
+.learning-box:hover .text-container {
+  background: transparent;
+}
+
+.learning-box:hover h4 {
+  top: 22rem !important;
+}
