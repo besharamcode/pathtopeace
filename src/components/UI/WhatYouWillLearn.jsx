@@ -15,16 +15,16 @@ const WhatYouWillLearn = () => {
                 <NavLink
                   to={data.to}
                   key={data.image}
-                  className="relative -z-20 max-w-80 learning-box "
+                  className="relative max-w-80 learning-box "
                 >
-                  <div className="text-container transition-all absolute bg-[#000000dc] rounded-full w-full h-full">
+                  <div className="text-container transition-all absolute -z-10 bg-[#000000dc] rounded-full w-full h-full">
                     <h4 className="text-center text-4xl transition-all absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 font-josefin">
                       {data.name}
                     </h4>
                   </div>
                   <img
                     src={data.image}
-                    className="rounded-full transition-all mx-auto drop-shadow-[-1rem_-.3rem_0rem_#c084fc]"
+                    className="rounded-full relative transition-all -z-20 mx-auto drop-shadow-[-1rem_-.3rem_0rem_#c084fc]"
                     alt=""
                   />
                 </NavLink>
