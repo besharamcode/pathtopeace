@@ -1,46 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Subheading from "../components/UI/Subheading";
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { contactLinks } from "../constant/constant";
 
 const Contact = () => {
   return (
     <section>
       <Subheading subheading={"contact us"} />
       {/* https://www.instagram.com/direct/t/17846087030622824/ */}
-      <div className="flex justify-between items-center mt-12 md:flex-row flex-col">
-        <div className="contact-info-box w-full pl-[0.30rem] h-full">
-          <h3 className="text-2xl text-center font-rethink border-b-2 border-sec w-fit mb-6">
-            <li> Connect With Us</li>
-          </h3>
-          <div className="icons flex gap-4 items-center justify-center">
-            <a
-              href="https://www.instagram.com/direct/t/17846087030622824/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-xl sm:text-2xl  text-white grid place-items-center sm:size-12 size-10 rounded-full hover:bg-transparent hover: hover:border-2"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/fazilath-ar-368851293/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-xl sm:text-2xl  text-white grid place-items-center sm:size-12 size-10 rounded-full hover:bg-transparent hover: hover:border-2"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a
-              href="mailto:fazilathar856@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              className="text-xl sm:text-2xl  text-white grid place-items-center sm:size-12 size-10 rounded-full hover:bg-transparent hover: hover:border-2"
-            >
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-          </div>
-        </div>
-        <div className="sm:w-11/12 md:px-10 mt-6 sm:mt-0">
+      <div className="mt-12">
+        <div className="sm:w-3/5 md:px-10 mt-6 sm:mt-0 mx-auto">
           <form className="flex flex-col border py-6 px-8 ">
             <h3 className="text-2xl text-center font-rethink border-b-2 border-sec w-fit mx-auto  mb-6">
               Feedback
@@ -80,6 +48,23 @@ const Contact = () => {
               Submit
             </button>
           </form>
+          <div className="contact-info-box w-full pl-[0.30rem] h-full my-8 ">
+            <div className="icons flex gap-8 items-center justify-center">
+              {contactLinks.map((link, i) => {
+                return (
+                  <a
+                    key={i}
+                    href={link.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xl border-2 border-sec sm:text-2xl text-white grid place-items-center sm:size-16 size-10 rounded-full hover:bg-transparent hover:scale-125 transition-transform"
+                  >
+                    <FontAwesomeIcon icon={link.icon} />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>

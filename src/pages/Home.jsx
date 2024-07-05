@@ -7,7 +7,7 @@ import JoinCourse from "../components/UI/JoinCourse";
 const Home = () => {
   return (
     <>
-      <div className="mb-28">
+      <div className="mb-12">
         <Hero />
         <WhatIsPathToPeace />
         <WhatYouWillLearn />

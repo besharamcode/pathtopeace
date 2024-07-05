@@ -12,7 +12,7 @@ export default {
       colors: {
         blue: "#10121c",
         sec: "#c084fc",
-        box: "#181a29",
+        box: "#171824",
       },
     },
   },

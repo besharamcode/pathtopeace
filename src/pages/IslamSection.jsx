@@ -1,4 +1,5 @@
 import ci4 from "../assets/ci4.jpg";
+import { islamTopics } from "../constant/constant";
 
 const IslamSection = () => {
   return (
@@ -11,18 +12,25 @@ const IslamSection = () => {
             alt=""
           />
         </div>
-        <div className="w-[50%] ml-auto pr-8">
+        <div className="w-[50%] ml-auto pr-8 h-96 overflow-x-visible no-bar overflow-y-scroll">
           <h3 className="mt-8 text-7xl font-rethink w-fit ">
             <p className="border-b-2 border-sec w-fit">Section 3</p>
             <p className="border-b-2 border-sec w-fit">I.S.L.A.M.</p>
           </h3>
-          <p className="mt-8 leading-relaxed">
-            In this section, we will delve into the principles and practices of
-            Tajweed, the science of correctly pronouncing the words of the
-            Quran. Tajweed ensures that each letter is articulated from its
-            proper origin and that the rules of pronunciation are adhered to,
-            thereby enhancing the beauty and clarity of Quranic recitation.
+          <p className="mt-8 leading-relaxed mb-8">
+            In this section, we embark on a thorough journey to understand the
+            essence of Islam, delving into its core beliefs, practices, and
+            teachings.
           </p>
+          <ul>
+            {islamTopics.map((topic, i) => {
+              return (
+                <li className="list-inside list-disc mb-4" key={i}>
+                  <span className="font-semibold">{topic.topic}</span>: <span>{topic.desc}</span>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </section>
