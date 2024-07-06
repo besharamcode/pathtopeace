@@ -149,7 +149,7 @@ const JoinCourse = () => {
           </div>
           <button
             type="submit"
-            className="bg-sec w-fit mx-auto px-8 mt-2 py-2 rounded-md focus-visible:outline-none focus-visible:bg-white"
+            className="bg-sec w-fit mx-auto px-8 mt-6 py-2 rounded-md focus-visible:outline-none focus-visible:bg-white"
           >
             Pay Rs.499
           </button>
