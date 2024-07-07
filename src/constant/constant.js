@@ -4,8 +4,8 @@ export const navLinks = [
     path: "/",
   },
   {
-    name: "Course",
-    path: "/course",
+    name: "Blogs",
+    path: "/blogs",
   },
   {
     name: "Contact",
@@ -55,7 +55,7 @@ export const contactLinks = [
 export const islamTopics = [
   {
     topic: "What is Islam",
-    desc: "Discover the fundamental principles and beliefs of Islam, And know Why it is religion of peace and happiness.",
+    desc: "Discover the fundamental principles and beliefs of Islam, And know Why it is a religion of peace and happiness.",
   },
   {
     topic: "Pillars of Islam",
@@ -79,7 +79,7 @@ export const islamTopics = [
   },
   {
     topic: "Who is the Founder of Islam",
-    desc: "Discover the life and teachings of Prophet Muhammad (peace be upon him), the final prophet of Islam, and his biography.",
+    desc: "Discover the life and teachings of Prophet Muhammad (peace be upon him)",
   },
   {
     topic: "Who are You",

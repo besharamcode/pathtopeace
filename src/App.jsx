@@ -1,14 +1,15 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
-import Home from "./pages/Home";
-import Course from "./pages/Course";
-import Contact from "./pages/Contact";
 import HeaderRoutes from "./components/HeaderRoutes";
-import Tajweed from "./pages/Tajweed";
-import Translation from "./pages/Translation";
-import IslamSection from "./pages/IslamSection";
+import { lazy } from "react";
 
 function App() {
+  const Home = lazy(() => import("./pages/Home"));
+  const Blogs = lazy(() => import("./pages/Blogs"));
+  const Contact = lazy(() => import("./pages/Contact"));
+  const Tajweed = lazy(() => import("./pages/Tajweed"));
+  const Translation = lazy(() => import("./pages/Translation"));
+  const IslamSection = lazy(() => import("./pages/IslamSection"));
   return (
     <Router>
       <Routes>
@@ -21,10 +22,10 @@ function App() {
           }
         />
         <Route
-          path="/course"
+          path="/blogs"
           element={
             <HeaderRoutes>
-              <Course />
+              <Blogs />
             </HeaderRoutes>
           }
         />

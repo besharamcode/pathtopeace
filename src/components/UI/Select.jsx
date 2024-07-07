@@ -6,7 +6,7 @@ const Select = React.forwardRef(
   ({ onChange, onBlur, name, label, options }, ref) => {
     return (
       <>
-        <label className="capitalize" htmlFor="label">
+        <label className="capitalize text-slate-500" htmlFor="label">
           {label}
         </label>
         <select

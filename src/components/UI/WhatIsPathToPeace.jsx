@@ -17,23 +17,23 @@ const WhatIsPathToPeace = () => {
             ></path>
           </svg>
         </div> */}
-      <div className="flex mt-60 items-center tracking-wide">
-        <div className="">
+      <div className="flex md:mt-60 sm:mt-40 mt-28 items-center tracking-wide flex-col md:flex-row">
+        <div className="w-fit">
           <img
             src={ci1}
-            className="ml-16 relative -z-10 w-1/2 bg-box rounded-full p-8 drop-shadow-[1rem_1rem_0rem_#c084fc]"
+            className="md:ml-16 relative mx-auto -z-10 w-1/2 bg-box rounded-full p-8 drop-shadow-[1rem_1rem_0rem_#c084fc]"
             alt=""
           />
         </div>
-        <div className="w-3/4">
-          <p className="font-josefin text-lg">
+        <div className="md:w-3/4 md:mt-0 mt-16">
+          <p className="font-josefin md:text-lg">
             Let&apos;s Learn Somthing About Path To Peace
           </p>
-          <h3 className="mt-8 text-7xl font-rethink w-fit">
+          <h3 className="md:mt-8 mt-2 md:text-7xl text-5xl font-rethink w-fit">
             <p className="border-b-2 border-sec w-fit">What Is Path To</p>
             <p className="border-b-2 border-sec w-fit">Peace</p>
           </h3>
-          <p className="mt-8 leading-relaxed">
+          <p className="md:mt-8 mt-3 leading-relaxed">
             This is Islamic course designed to teach you basic Islamic knowledge
             and Muslim beliefs. Learn tajweed, explore the beautiful teachings
             of Islam, and understand the words of Allah. Discover your purpose
