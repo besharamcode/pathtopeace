@@ -45,3 +45,14 @@ export const contactSchema = yup
     message: yup.string().required("Message is required"),
   })
   .required();
+
+export const adminAuthSchema = yup
+  .object({
+    email: yup
+      .string()
+      .email("Invalid email format")
+      .required("Email is required"),
+      passwordKey: yup.string().required("Security Question is required"),
+    password: yup.string().required("Password is required"),
+  })
+  .required();

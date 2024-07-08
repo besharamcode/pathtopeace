@@ -10,6 +10,8 @@ function App() {
   const Tajweed = lazy(() => import("./pages/Tajweed"));
   const Translation = lazy(() => import("./pages/Translation"));
   const IslamSection = lazy(() => import("./pages/IslamSection"));
+  const AddBlog = lazy(() => import("./pages/admin/AddBlog"));
+  const AdminAuth = lazy(() => import("./pages/admin/AdminAuth"));
   return (
     <Router>
       <Routes>
@@ -58,6 +60,22 @@ function App() {
           element={
             <HeaderRoutes>
               <Contact />
+            </HeaderRoutes>
+          }
+        />
+        <Route
+          path="/adminauth"
+          element={
+            <HeaderRoutes>
+              <AdminAuth />
+            </HeaderRoutes>
+          }
+        />
+        <Route
+          path="/admin/addblog"
+          element={
+            <HeaderRoutes>
+              <AddBlog />
             </HeaderRoutes>
           }
         />
