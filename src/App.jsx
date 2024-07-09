@@ -2,6 +2,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
 import HeaderRoutes from "./components/HeaderRoutes";
 import { lazy } from "react";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Termsandconditions from "./pages/Termsandconditions";
+import Productandservices from "./pages/Productandservices";
+import Refundandcancellation from "./pages/Refundandcancellation";
 
 function App() {
   const Home = lazy(() => import("./pages/Home"));
@@ -60,6 +64,38 @@ function App() {
           element={
             <HeaderRoutes>
               <Contact />
+            </HeaderRoutes>
+          }
+        />
+        <Route
+          path="/privacy-policy"
+          element={
+            <HeaderRoutes>
+              <PrivacyPolicy />
+            </HeaderRoutes>
+          }
+        />
+        <Route
+          path="/terms-and-conditions"
+          element={
+            <HeaderRoutes>
+              <Termsandconditions/>
+            </HeaderRoutes>
+          }
+        />
+        <Route
+          path="/product-and-services"
+          element={
+            <HeaderRoutes>
+              <Productandservices />
+            </HeaderRoutes>
+          }
+        />
+        <Route
+          path="/refund-and-cancellation"
+          element={
+            <HeaderRoutes>
+              <Refundandcancellation />
             </HeaderRoutes>
           }
         />

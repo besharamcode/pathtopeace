@@ -4,7 +4,7 @@ import { islamTopics } from "../constant/constant";
 const IslamSection = () => {
   return (
     <section>
-      <div className="mt-20 tracking-wide">
+      <div className="mt-20 tracking-wide md:w-3/4 mx-auto">
         <div className="md:w-[30%] sm:w-4/6 w-4/5 relative -z-20 mx-auto">
           <img
             src={ci4}
@@ -21,15 +21,14 @@ const IslamSection = () => {
             </p>
           </h3>
           <p className="mt-8 leading-relaxed mb-8">
-            In this section, we embark on a thorough journey to understand the
-            essence of Islam, delving into its core beliefs, practices, and
-            teachings.
+            In this section, we embark on a journey to understand the essence of
+            Islam, delving into its core beliefs, practices, and teachings.
           </p>
           <ul>
             {islamTopics.map((topic, i) => {
               return (
                 <li className="list-inside list-disc mb-4" key={i}>
-                  <span className="font-semibold">{topic.topic}</span>:{" "}
+                  <span className="font-semibold border-b-2 border-sec">{topic.topic}</span>:{" "}
                   <span>{topic.desc}</span>
                 </li>
               );

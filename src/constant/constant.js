@@ -55,11 +55,11 @@ export const contactLinks = [
 export const islamTopics = [
   {
     topic: "What is Islam",
-    desc: "Discover the fundamental principles and beliefs of Islam, And know Why it is a religion of peace and happiness.",
+    desc: `Discover the fundamental principles and beliefs of Islam, And know the reason behind why is it said "The teachings of Islam invite people to live a peaceful life"`,
   },
   {
     topic: "Pillars of Islam",
-    desc: "Learn about the five pillars in the details that form the foundation of a Muslim's faith and practice. (In Detail)",
+    desc: "Learn about the five pillars in the detail that form the foundation of a Muslim's faith and practice. (In Detail)",
   },
   {
     topic: "What is Imaan",
@@ -71,15 +71,15 @@ export const islamTopics = [
   },
   {
     topic: "Who are Muslims",
-    desc: "Learn about the one who follow islam and their share values and belief.",
+    desc: "Learn about the one who follow islam and their share values and belief.",
   },
   {
     topic: "What is the Quran",
-    desc: "Gain insight into the Quran, the holy book of Islam, and its role as the ultimate source of guidance for Muslims.",
+    desc: "Gain insight into the Quran, the holy book of Islam, and its role as the ultimate source of guidance/ syllabus for life.",
   },
   {
     topic: "Who is the Founder of Islam",
-    desc: "Discover the life and teachings of Prophet Muhammad (peace be upon him)",
+    desc: "Discover the life and teachings of Prophet Muhammad (peace be upon him) and Discover Criteria for a peaceful life.",
   },
   {
     topic: "Who are You",
@@ -95,15 +95,15 @@ export const islamTopics = [
   },
   {
     topic: "Know Yourself",
-    desc: "Engage in self-reflection to better understand your own beliefs, values, and purpose.",
+    desc: "Engage in self- reflection to better understand your own beliefs, values, and purpose.",
   },
   {
     topic: "Know Who is Allah",
-    desc: "Deepen your knowledge of Allah, His nature, and His relationship with His creation.",
+    desc: "Deepen your knowledge of Allah, Strengthen your relationship with Allah and its impact on your life.",
   },
   {
     topic: "Purpose of Life",
-    desc: "Contemplate the ultimate purpose of human existence according to Islamic teachings.",
+    desc: "Contemplate the ultimate purpose of your existence.",
   },
   {
     topic: "Misconceptions in Islam",
@@ -111,6 +111,29 @@ export const islamTopics = [
   },
   {
     topic: "Islamic Months",
-    desc: "Familiarize yourself with the Islamic lunar calendar and the significance of each month, including Ramadan and the months of Hajj.",
+    desc: "Familiarize yourself with the Islamic lunar calendar and the significance of each month.",
+  },
+];
+
+export const footerLinks = [
+  {
+    title: "Contact Us",
+    link: "/contact",
+  },
+  {
+    title: "Privacy Policy",
+    link: "/privacy-policy",
+  },
+  {
+    title: "Terms and Conditions",
+    link: "/terms-and-conditions",
+  },
+  {
+    title: "Product and Services",
+    link: "/product-and-services",
+  },
+  {
+    title: "Refund and Cancellation",
+    link: "/refund-and-cancellation",
   },
 ];
